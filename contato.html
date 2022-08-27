@@ -5,11 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <h1>Dúvidas? Entre em contato comigo:</h1>
+    <ul id="menu">
+        <li>
+            <a href="meuperfil.html"> Home </a>
+        </li>
+        <li>
+            <a href="contato.html"> Contato </a>
+        </li>
+   </ul>
+    <h1 class="center">Dúvidas? Entre em contato comigo:</h1>
 
-    <form>
+    <form class="center">
         <label for="nome">Nome:</label> <br>
         <input type="text" id="nome">
         <br>
@@ -22,18 +31,29 @@
         <textarea type="assunto" id="assunto" cols="60" rows="5"></textarea>
         <br><br>
         <button>Enviar</button>
-        <br><br>
-
-        <h2>Redes sociais:</h2>
-        <ul>
-            <li>
-                <a href="https://github.com/Stefanyrsouza">Github</a>
-            </li>
-        
-            <a href="https://www.linkedin.com/in/stefany-souza/">
-                <li>Linkedin</li>
-                </a>
-        </ul>
+               
     </form>
+    <hr>
+    <footer>
+        
+        <div class="container">
+            <a href="https://www.instagram.com/stef.souzaa/">
+                <img class="tm-social p-30" src="assets/img/instagram.png" alt="Logo do Instagram">
+            </a>                 
+            <a href="https://www.linkedin.com/in/stefany-souza/">
+                <img class="tm-social p-30" src="assets/img/linkedin.png" alt="Logo do Linkedin">
+            </a>
+           <a href="https://github.com/Stefanyrsouza">
+                <img class="tm-social p-30" src="assets/img/github.png" alt="Logo do Github">
+           </a>
+            
+        </div>
+
+       <p class="center">
+        Todos os direitos reservados: Stefany Souza &copy
+       </p> 
+    </footer>
+
+
 </body>
 </html>
