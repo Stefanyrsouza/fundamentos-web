@@ -10,7 +10,7 @@
 <body>
     <ul id="menu">
         <li>
-            <a href="meuperfil.html"> Home </a>
+            <a href="index.html"> Home </a>
         </li>
         <li>
             <a href="contato.html"> Contato </a>
@@ -20,17 +20,19 @@
 
     <form class="center">
         <label for="nome">Nome:</label> <br>
-        <input type="text" id="nome">
+        <input type="text" id="nome" onkeyup='validaNome()'>
+        <div id='txtNome'></div>        
         <br>
+        <label for="email">Email:</label>        
         <br>
-        <label for="email">Email:</label> <br>
-        <input type="email" id="email">
-        <br>
+        <input type="email" id="email" onkeyup='validaEmail()'>
+        <div id='txtEmail'></div> 
         <br>
         <label for="assunto">Assunto:</label> <br>
-        <textarea type="assunto" id="assunto" cols="60" rows="5"></textarea>
+        <textarea type="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
+        <div id='txtAssunto'></div> 
         <br><br>
-        <button>Enviar</button>
+        <button onclick="enviar()">Enviar</button>
                
     </form>
     <hr>
@@ -54,6 +56,6 @@
        </p> 
     </footer>
 
-
+        <script src="assets/js/script.js"></script>
 </body>
 </html>
